@@ -1,5 +1,5 @@
 module "infra_commn_svc_acc" {
-  source = "../tf_modules/service-composite-repo"
+  source = "../tf_module/service-composite-repo"
 
   #Shared global variables
   project_id = var.project_id
@@ -7,5 +7,5 @@ module "infra_commn_svc_acc" {
   #Variable for the service account
   account_id   = "tf-clops-infra-svcacct"
   display_name = "tf-clops-infra-svcacct"
-  description  = "Service Account for infra creation in shared services project"
+  description  = "Service Account for infra creation in common services project"
 }
